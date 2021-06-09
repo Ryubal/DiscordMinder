@@ -1,0 +1,7 @@
+{
+	"prefix": "!",
+	"defaultLang": "en",
+	"token": "YOUR_DISCORD_TOKEN_GOES_HERE",
+
+	"version": "1.0.0"
+}
