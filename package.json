@@ -1,0 +1,23 @@
+{
+  "name": "discordminder",
+  "version": "1.0.0",
+  "description": "Discord bot that lets everyone set their own reminders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryubal/DiscordMinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryubal/DiscordMinder/issues"
+  },
+  "homepage": "https://github.com/Ryubal/DiscordMinder#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "i18n-node": "^2.1.5"
+  }
+}
