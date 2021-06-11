@@ -1,0 +1,71 @@
+{
+	"e": {
+		"ready": "Listo!",
+		"message": {
+			"error_command": "Perdón! No pude ejecutar este comando 🙁"
+		}
+	},
+	"c": {
+		"author": {
+			"name": "autor",
+			"description": "Para obtener el autor del bot",
+			"usage": "autor",
+			"help_msg": "-",
+			"author_msg": "Mi creador es Ricardo Yubal!"
+		},
+		"remind": {
+			"name": "recuerda",
+			"description": "Configura un recordatorio",
+			"usage": "recuerda en [TIEMPO] [UNIDAD] [RECORDATORIO]",
+			"help_msg": "Todos los parámetros son requeridos:\n`[TIEMPO]` - En cuantos segundos/minutos/horas/etc querrás ser recordado\n`[UNIDAD]` - Unidad de tiempo. Puede ser: `segundos`, `minutos`, `horas`, `dias` o `semanas`\n`[RECORDATORIO]` - El contenido del recordatorio.\n\nEjemplos\n`!recuerda en 2 semanas Comprar ropa`\n`!recuerda en 1 hora Hacer la tarea`\n`!recuerda en 3 dias Comprar cafe`",
+			"in": "en",
+			"units": {
+				"singular": {
+					"second": "segundo",
+					"minute": "minuto",
+					"hour": "hora",
+					"day": "dia",
+					"week": "semana"
+				},
+				"plural": {
+					"seconds": "segundos",
+					"minutes": "minutos",
+					"hours": "horas",
+					"days": "dias",
+					"weeks": "semanas"
+				}
+			},
+			"error_no_args": "No enviaste ningún argumento, <@{author}>\nPuedes enviar `{prefix}ayuda recuerda` para obtener más informacion de este comando.",
+			"error_missing_args": "No enviaste suficientes argumentos, <@{author}>\nPuedes enviar `{prefix}ayuda recuerda` para obtener más informacion de este comando.",
+			"error_wrong_in": "El primer argumento es incorrecto, <@{author}>\nPuedes enviar `{prefix}ayuda recuerda` para obtener más información de este comando.",
+			"error_wrong_amount": "Segundo argumento debe ser un número entero, <@{author}>\nPuedes enviar `{prefix}ayuda recuerda` para obtener más información de este comando.",
+			"error_wrong_unit": "Tercer argumento debe ser una unidad válida, <@{author}>\n\nUnidades válidas son: `{units}`",
+			"error_wrong_reminder": "Olvidaste enviar el contenido del recordatorio!",
+			"error_creating": "Ups! No pude configurar ese recordatorio ahora mismo 😕",
+			"success_created": "Muy bien, <@{author}>! Me aseguraré de enviarte un mensaje recordándote 😉"
+		},
+		"help": {
+			"name": "ayuda",
+			"description": "Regresa todos los comandos disponibles",
+			"label_description": "Descripción",
+			"label_usage": "Uso",
+			"help": "Ayuda",
+			"specific_help_msg": "Para ver ayuda acerca de un comando en específico, envíe `{prefix}ayuda COMANDO`, ejemplo: `{prefix}ayuda recuerda`",
+			"error_missing_command": "El comando `{command}` no existe"
+		}
+	},
+	"db": {
+		"connected": "Connectado a la BD, creando tabla si no existe...",
+		"error_creating": "Ocurrió un error al intentar crear tabla:",
+		"success_created": "Tabla creada con éxito (si no existía antes)"
+	},
+	"reminderChecker": {
+		"checking": "Checando recordatorios...",
+		"error_getting": "No se pudieron obtener los recordatorios:",
+		"reminding": "Recordando a {author}",
+		"error_reminding": "Error al intentar recordar usuario",
+		"error_removing": "Error al intentar eliminar recordatorio",
+		"error_finding_user": "Error al buscar usuario. Eliminando recordatorio.",
+		"created_on": "Este es un recordatorio que creaste el {date}"
+	}
+}

@@ -38,7 +38,7 @@ module.exports = {
 			return message.channel.send(i18n.__mf('c.remind.error_missing_args', { author: message.author,prefix: prefix }))
 
 		// Now validate each one.. First arg has to be 'in'
-		if(!args[0] || args[0].toLowerCase() != 'in')
+		if(!args[0] || args[0].toLowerCase() != i18n.__('c.remind.in'))
 			return message.channel.send(i18n.__mf('c.remind.error_wrong_in', { author: message.author,prefix: prefix }))
 
 		// Second arg is amount... It has to be a valid integer

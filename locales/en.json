@@ -5,6 +5,7 @@
 			"error_command": "Sorry! I couldn't execute this command 🙁"
 		}
 	},
+
 	"c": {
 		"author": {
 			"name": "author",
@@ -13,11 +14,13 @@
 			"help_msg": "-",
 			"author_msg": "Ricardo Yubal is my creator!"
 		},
+
 		"remind": {
 			"name": "remind",
 			"description": "Set a reminder",
-			"usage": "!remind in [AMOUNT] [UNIT] [REMINDER]",
-			"help_msg": "-",
+			"usage": "remind in [AMOUNT] [UNIT] [REMINDER]",
+			"help_msg": "All params are required:\n`[AMOUNT]` - In how many seconds/minutes/hours/etc you'd like to be reminded\n`[UNIT]` - Unit of amount. This can be: `seconds`, `minutes`, `hours`, `days` or `weeks`\n`[REMINDER]` - The actual content of the reminder.\n\nExamples\n`!remind in 2 weeks Go buy new clothes`\n`!remind in 1 hour Do my homework`\n`!remind in 3 days Buy some coffee`",
+			"in": "in",
 			"units": {
 				"singular": {
 					"second": "second",
@@ -42,20 +45,32 @@
 			"error_wrong_reminder": "You forgot to set the reminder content!",
 			"error_creating": "Oops! I couldn't set that reminder right now 😕",
 			"success_created": "Ok, <@{author}>! I'll make sure to send you a DM reminding you 😉"
+		},
+
+		"help": {
+			"name": "help",
+			"description": "Returns all commands available",
+			"label_description": "Description",
+			"label_usage": "Usage",
+			"help": "Help",
+			"specific_help_msg": "To see help about a specific command, send `{prefix}help COMMAND`, example: `{prefix}help remind`",
+			"error_missing_command": "The `{command}` command doesn't exist"
 		}
 	},
+
 	"db": {
-		"connnected": "Connected to DB, creating table if it doesn't exist...",
+		"connected": "Connected to DB, creating table if it doesn't exist...",
 		"error_creating": "Something wrong occurred while trying to create table:",
-		"success_created": "Table created successfully (if it didn't exist before)",
-		"connected": "db.connected"
+		"success_created": "Table created successfully (if it didn't exist before)"
 	},
+
 	"reminderChecker": {
 		"checking": "Checking for reminders...",
 		"error_getting": "Couldn't get reminders:",
 		"reminding": "Reminding {author}",
 		"error_reminding": "Error while trying to remind user",
 		"error_removing": "Error while trying to remove reminder",
-		"error_finding_user": "Error while trying to find user. Deleting reminder."
+		"error_finding_user": "Error while trying to find user. Deleting reminder.",
+		"created_on": "This is a reminder you created on {date}"
 	}
 }

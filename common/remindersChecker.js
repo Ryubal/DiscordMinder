@@ -20,11 +20,13 @@ const checker = () => {
 			client.users.fetch(reminder.authorId).then(user => {
 				console.log(i18n.__mf('reminderChecker.reminding', { author: reminder.authorUsername}))
 
+				const prettyDate = new Date(reminder.created_at).toLocaleString()
+
 				// Send reminder!
 				const embed = new MessageEmbed()
 					.setColor('#FF0000')
 					.setTitle(reminder.reminder)
-					.addField('\u200b', 'This is a reminder you created on ' + new Date(reminder.created_at).toLocaleString())
+					.addField('\u200b', i18n.__mf('reminderChecker.created_on', { date: prettyDate }))
 
 				user.send(embed).catch(() => {
 					console.log(i18n.__mf('reminderChecker.error_reminding'))
