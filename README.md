@@ -17,7 +17,7 @@ The functionality of this bot is pretty specific: it lets any user create a remi
 
 Below is a description of available commands.
 
-`!remind in [AMOUNT] [UNIT] [REMINDER]
+`!remind in [AMOUNT] [UNIT] [REMINDER]`
 > Sets a new reminder. All parameters are required.
 
 > `[AMOUNT]` - In how many seconds/minutes/hours/etc you'd like to be reminded
