@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Ryubal/DiscordMinder#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
-    "i18n-node": "^2.1.5"
+    "i18n": "^0.13.3",
+    "sqlite3": "^5.0.2"
   }
 }

@@ -1,0 +1,61 @@
+{
+	"e": {
+		"ready": "Ready!",
+		"message": {
+			"error_command": "Sorry! I couldn't execute this command 🙁"
+		}
+	},
+	"c": {
+		"author": {
+			"name": "author",
+			"description": "Gets bot creator",
+			"usage": "author",
+			"help_msg": "-",
+			"author_msg": "Ricardo Yubal is my creator!"
+		},
+		"remind": {
+			"name": "remind",
+			"description": "Set a reminder",
+			"usage": "!remind in [AMOUNT] [UNIT] [REMINDER]",
+			"help_msg": "-",
+			"units": {
+				"singular": {
+					"second": "second",
+					"minute": "minute",
+					"hour": "hour",
+					"day": "day",
+					"week": "week"
+				},
+				"plural": {
+					"seconds": "seconds",
+					"minutes": "minutes",
+					"hours": "hours",
+					"days": "days",
+					"weeks": "weeks"
+				}
+			},
+			"error_no_args": "You didn't provide any arguments, <@{author}>\nYou can send `{prefix}help remind` to get more information about this command.",
+			"error_missing_args": "You didn't provide enough arguments, <@{author}>\nYou can send `{prefix}help remind` to get more information about this command.",
+			"error_wrong_in": "First argument is wrong, <@{author}>\nYou can send `{prefix}help remind` to get more information about this command.",
+			"error_wrong_amount": "Second argument has to be a valid integer, <@{author}>\nYou can send `{prefix}help remind` to get more information about this command.",
+			"error_wrong_unit": "Third argument has to be a valid unit, <@{author}>\n\nValid units are: `{units}`",
+			"error_wrong_reminder": "You forgot to set the reminder content!",
+			"error_creating": "Oops! I couldn't set that reminder right now 😕",
+			"success_created": "Ok, <@{author}>! I'll make sure to send you a DM reminding you 😉"
+		}
+	},
+	"db": {
+		"connnected": "Connected to DB, creating table if it doesn't exist...",
+		"error_creating": "Something wrong occurred while trying to create table:",
+		"success_created": "Table created successfully (if it didn't exist before)",
+		"connected": "db.connected"
+	},
+	"reminderChecker": {
+		"checking": "Checking for reminders...",
+		"error_getting": "Couldn't get reminders:",
+		"reminding": "Reminding {author}",
+		"error_reminding": "Error while trying to remind user",
+		"error_removing": "Error while trying to remove reminder",
+		"error_finding_user": "Error while trying to find user. Deleting reminder."
+	}
+}

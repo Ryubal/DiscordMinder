@@ -2,6 +2,7 @@
 	"prefix": "!",
 	"defaultLang": "en",
 	"token": "YOUR_DISCORD_TOKEN_GOES_HERE",
+	"checkInterval": 10,
 
 	"version": "1.0.0"
 }
